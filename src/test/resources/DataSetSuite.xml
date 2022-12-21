@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API test">
+    <listeners>
+        <listener class-name="util.listener.Listener"/>
+    </listeners>
+
+    <test name="API basic test">
+        <parameter name="endpoint" value="https://637bb09f72f3ce38ea92c648.mockapi.io/am-garc1a/bank"/>
+
+        <classes>
+            <class name="tests.DataSetTest"/>
+        </classes>
+    </test>
+</suite>
